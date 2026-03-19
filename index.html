@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HetmanInvest — ссылки</title>
-  <meta name="description" content="Все основные ссылки HetmanInvest в одном месте." />
+  <title>HetmanInvest — все ссылки</title>
+  <meta name="description" content="HetmanInvest — ссылки на Telegram, Instagram и YouTube. Инвестиции спокойно, понятно и системно." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,24 +12,34 @@
         extend: {
           colors: {
             brand: {
-              bg: '#0B1020',
-              panel: 'rgba(15, 23, 42, 0.72)',
-              line: 'rgba(148, 163, 184, 0.18)',
-              gold: '#D4AF37',
-              emerald: '#17B26A',
-              text: '#F8FAFC',
-              muted: '#94A3B8'
+              primary: '#42E572',
+              primaryDark: '#1B7F37',
+              primaryDeep: '#092A12',
+              accent: '#3B82F6',
+              accentDark: '#1D4ED8',
+              gray50: '#F9FAFB',
+              gray100: '#F3F4F6',
+              gray200: '#E5E7EB',
+              gray300: '#D1D5DB',
+              gray400: '#9CA3AF',
+              gray500: '#6B7280',
+              gray600: '#4B5563',
+              gray700: '#374151',
+              gray800: '#1F2937',
+              gray900: '#111827'
             }
           },
+          fontFamily: {
+            heading: ['Rubik', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            body: ['TT Norms Pro', 'TT Norms', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
           boxShadow: {
-            glow: '0 20px 60px rgba(11,16,32,.45)',
-            soft: '0 12px 30px rgba(15,23,42,.25)'
+            card: '0 18px 50px rgba(9, 42, 18, 0.18)',
+            glow: '0 10px 30px rgba(66, 229, 114, 0.22)'
           },
           backgroundImage: {
-            hero: 'radial-gradient(circle at top, rgba(212,175,55,.16), transparent 32%), radial-gradient(circle at bottom right, rgba(23,178,106,.14), transparent 28%), linear-gradient(180deg, #0B1020 0%, #111827 100%)'
-          },
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+            page: 'radial-gradient(circle at top, rgba(66,229,114,.16), transparent 28%), radial-gradient(circle at bottom right, rgba(59,130,246,.14), transparent 30%), linear-gradient(180deg, #F9FAFB 0%, #F3F4F6 100%)',
+            card: 'linear-gradient(180deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.92) 100%)'
           }
         }
       }
@@ -37,76 +47,89 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="min-h-screen bg-brand-bg bg-hero text-brand-text antialiased">
-  <main class="mx-auto flex min-h-screen w-full max-w-md flex-col px-4 py-6 sm:px-6">
-    <section class="relative overflow-hidden rounded-[32px] border border-white/10 bg-brand-panel p-5 shadow-glow backdrop-blur xl:p-6">
-      <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent"></div>
-      <div class="relative">
+<body class="min-h-screen bg-page bg-fixed font-body text-brand-gray900 antialiased">
+  <main class="mx-auto flex min-h-screen w-full max-w-md flex-col px-4 py-5 sm:px-6">
+    <section class="overflow-hidden rounded-[32px] border border-white/70 bg-card shadow-card backdrop-blur">
+      <div class="h-2 w-full bg-gradient-to-r from-brand-primary via-brand-accent to-brand-primaryDark"></div>
+
+      <div class="px-5 pb-5 pt-5 sm:px-6 sm:pb-6">
         <div class="mb-5 flex items-start justify-between gap-4">
           <div>
-            <p class="mb-2 inline-flex items-center rounded-full border border-brand-gold/30 bg-brand-gold/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-brand-gold">HetmanInvest</p>
-            <h1 class="text-3xl font-extrabold leading-tight">Где меня найти</h1>
-            <p class="mt-2 max-w-xs text-sm leading-6 text-brand-muted">Инвестиции без хаоса: полезный контент, личная связь и все основные площадки в одном месте.</p>
+            <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-brand-primary/20 bg-brand-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-primaryDark">
+              <span class="h-2 w-2 rounded-full bg-brand-primary"></span>
+              HetmanInvest
+            </div>
+            <h1 class="font-heading text-[2rem] font-extrabold leading-[1.02] text-brand-gray900">Инвестиции без хаоса</h1>
+            <p class="mt-3 max-w-[28ch] text-[15px] leading-6 text-brand-gray600">Спокойно, понятно и системно. Все основные площадки в одном месте.</p>
           </div>
-          <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-2xl shadow-soft">📈</div>
+          <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-primary/12 text-2xl shadow-glow">🧭</div>
         </div>
 
-        <div class="mb-6 rounded-3xl border border-white/10 bg-white/5 p-4">
-          <p class="text-xs font-medium uppercase tracking-[0.22em] text-brand-muted">Фокус</p>
-          <p class="mt-2 text-sm leading-6 text-slate-200">Помогаю разобраться с первыми шагами в инвестициях: спокойно, структурно и без лишнего шума.</p>
+        <div class="mb-5 rounded-[28px] border border-brand-gray200 bg-white/80 p-4">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-gray500">Кто я</p>
+          <p class="mt-2 text-sm leading-6 text-brand-gray700">Андрей Гетманенко — наставник по инвестициям для русскоязычных резидентов Польши и Европы.</p>
+        </div>
+
+        <div class="mb-6 rounded-[28px] bg-brand-gray900 p-4 text-white">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/60">Суть</p>
+          <p class="mt-2 text-sm leading-6 text-white/90">Помогаю перейти из состояния «хочу инвестировать, но страшно и непонятно» к понятной инвестиционной системе с регулярностью, учетом и спокойствием.</p>
         </div>
 
         <div class="space-y-3">
-          <a href="https://t.me/m/N86fJE3iNjRi" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-4 transition hover:-translate-y-0.5 hover:border-brand-gold/50 hover:bg-white/[0.07]">
-            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500/15 text-2xl">✈️</div>
+          <a href="https://t.me/m/N86fJE3iNjRi" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-[24px] border border-brand-gray200 bg-white px-4 py-4 transition hover:-translate-y-0.5 hover:border-brand-primary/60 hover:shadow-card">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-2xl">✈️</div>
             <div class="min-w-0 flex-1">
               <div class="flex items-center justify-between gap-3">
-                <h2 class="font-semibold">Личный Telegram</h2>
-                <span class="text-lg text-brand-gold transition group-hover:translate-x-1">→</span>
+                <h2 class="font-heading text-base font-bold">Личный Telegram</h2>
+                <span class="text-lg text-brand-accent transition group-hover:translate-x-1">→</span>
               </div>
-              <p class="mt-1 text-sm text-brand-muted">Написать лично</p>
+              <p class="mt-1 text-sm text-brand-gray500">Написать лично</p>
             </div>
           </a>
 
-          <a href="https://t.me/financial_light" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-4 transition hover:-translate-y-0.5 hover:border-brand-gold/50 hover:bg-white/[0.07]">
-            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500/15 text-2xl">📣</div>
+          <a href="https://t.me/financial_light" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-[24px] border border-brand-gray200 bg-white px-4 py-4 transition hover:-translate-y-0.5 hover:border-brand-primary/60 hover:shadow-card">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-primary/12 text-2xl">📣</div>
             <div class="min-w-0 flex-1">
               <div class="flex items-center justify-between gap-3">
-                <h2 class="font-semibold">Telegram-канал</h2>
-                <span class="text-lg text-brand-gold transition group-hover:translate-x-1">→</span>
+                <h2 class="font-heading text-base font-bold">Telegram-канал</h2>
+                <span class="text-lg text-brand-accent transition group-hover:translate-x-1">→</span>
               </div>
-              <p class="mt-1 text-sm text-brand-muted">Контент про инвестиции и систему</p>
+              <p class="mt-1 text-sm text-brand-gray500">Полезный контент про инвестиции и систему</p>
             </div>
           </a>
 
-          <a href="https://www.instagram.com/invest.hetman" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-4 transition hover:-translate-y-0.5 hover:border-brand-gold/50 hover:bg-white/[0.07]">
-            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-pink-500/15 text-2xl">📸</div>
+          <a href="https://www.instagram.com/invest.hetman" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-[24px] border border-brand-gray200 bg-white px-4 py-4 transition hover:-translate-y-0.5 hover:border-brand-primary/60 hover:shadow-card">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-pink-100 text-2xl">📸</div>
             <div class="min-w-0 flex-1">
               <div class="flex items-center justify-between gap-3">
-                <h2 class="font-semibold">Instagram</h2>
-                <span class="text-lg text-brand-gold transition group-hover:translate-x-1">→</span>
+                <h2 class="font-heading text-base font-bold">Instagram</h2>
+                <span class="text-lg text-brand-accent transition group-hover:translate-x-1">→</span>
               </div>
-              <p class="mt-1 text-sm text-brand-muted">Короткие форматы и визуальный контент</p>
+              <p class="mt-1 text-sm text-brand-gray500">Reels, короткие идеи и визуальные форматы</p>
             </div>
           </a>
 
-          <a href="https://www.youtube.com/@hetman_invest" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-4 transition hover:-translate-y-0.5 hover:border-brand-gold/50 hover:bg-white/[0.07]">
-            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-500/15 text-2xl">▶️</div>
+          <a href="https://www.youtube.com/@hetman_invest" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-[24px] border border-brand-gray200 bg-white px-4 py-4 transition hover:-translate-y-0.5 hover:border-brand-primary/60 hover:shadow-card">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-100 text-2xl">▶️</div>
             <div class="min-w-0 flex-1">
               <div class="flex items-center justify-between gap-3">
-                <h2 class="font-semibold">YouTube</h2>
-                <span class="text-lg text-brand-gold transition group-hover:translate-x-1">→</span>
+                <h2 class="font-heading text-base font-bold">YouTube</h2>
+                <span class="text-lg text-brand-accent transition group-hover:translate-x-1">→</span>
               </div>
-              <p class="mt-1 text-sm text-brand-muted">Видео с разбором и обучением</p>
+              <p class="mt-1 text-sm text-brand-gray500">Разборы, обучение и спокойный взгляд на рынок</p>
             </div>
           </a>
         </div>
 
-        <div class="mt-6 flex items-center justify-between gap-3 rounded-2xl border border-brand-emerald/20 bg-brand-emerald/10 px-4 py-3 text-sm text-emerald-100">
-          <span>Выбери площадку — и поехали.</span>
-          <span class="rounded-full bg-white/10 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.18em]">Mobile first</span>
+        <div class="mt-6 rounded-[28px] border border-brand-accent/15 bg-brand-accent/5 p-4">
+          <p class="font-heading text-sm font-bold text-brand-gray900">Что ты получишь у меня</p>
+          <ul class="mt-3 space-y-2 text-sm leading-6 text-brand-gray600">
+            <li>• понятный маршрут: цель → стратегия → брокер → первые покупки</li>
+            <li>• пассивный подход и ETF вместо гонки за «иксами»</li>
+            <li>• минимум хаоса и около 1 часа в месяц на учет</li>
+          </ul>
         </div>
       </div>
     </section>
